@@ -1,0 +1,66 @@
+.btn,
+.btn:link,
+.btn:visited,
+.btn:active {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: all .3s;
+    }
+.btn:hover{
+    transform: translateY(-1px);
+}
+.btn__text {
+    display: block;
+    font-size: 1rem;
+    font-family: 'TT Lakes';
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    padding: 0 0.5rem;
+}
+.btn__text--show-on--desktop{
+    display: none;
+}
+@media (min-width: 900px) {
+    .btn__text--show-on--desktop{ 
+        display:block;
+    }
+}
+
+.btn__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.btn__icon--menu{
+    background-image: url("../../img/icons/menu.svg");
+}
+.btn__icon--tel{
+    background-image: url("../../img/icons/tel.svg");
+}
+.btn__icon--message{
+    background-image: url("../../img/icons/messege.svg");
+}
+.btn__icon--login{
+    background-image: url("../../img/icons/login.svg");
+}
+.btn__icon--order{
+    background-image: url("../../img/icons/tools.svg");
+}
+.btn__icon--status{
+    background-image: url("../../img/icons/status.svg");
+}
+.btn__icon--read-more{
+    background-image: url("../../img/icons/more.svg");
+    width: .5rem;
+    height: 1rem;
+    margin-right: .5rem;
+    background-color: transparent;
+}
