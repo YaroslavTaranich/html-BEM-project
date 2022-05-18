@@ -1,0 +1,31 @@
+.brands {
+    background-color: var(--bg-color);
+    padding-bottom: 1rem;
+}
+
+.brands__swiper {
+    padding: 1rem;
+    padding-bottom: 3rem;
+}
+
+.brands__read-more {
+    display: none;
+}
+@media (min-width: 768px) {
+    .brands__swiper {
+        padding: 1.5rem;
+    }
+    .brands__read-more {
+        display: flex;
+        margin-left: 1.5rem;
+        margin-bottom: 1rem;
+    }
+}
+@media (min-width: 1440px) {
+    .brands__swiper {
+        padding: 1.5rem 2rem;
+    }
+    .brands__read-more {
+        margin-left: 2rem;
+    }
+} 

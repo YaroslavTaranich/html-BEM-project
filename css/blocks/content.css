@@ -49,19 +49,19 @@
     }
 }
 
-.content__p{
+.content__paragraph{
     margin: 0;
     margin-bottom: 1rem;
 }
-.content__p,
+.content__paragraph,
 .content__span{
     display: none;
 }
-.content__p:first-of-type{
+.content__paragraph:first-of-type{
     display: block;
 }
 @media (min-width: 768px) {
-    .content__p{
+    .content__paragraph{
         display: block;
     }    
     .content__span:first-of-type{

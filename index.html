@@ -7,49 +7,48 @@
     <link rel="stylesheet" href="./css/style.css"/>
     <title>Kata task</title>
 </head>
-<body>
-    <header class="container header">
-        <div class="header__container">
+<body class="container">
+    <header class="header">
+        
+        <button class="header__btn btn">
+            <div class="btn__icon btn__icon--menu"></div>
+        </button>
+        <div class="header__logo">
+            <a href="#">
+                <img src="./img/logo.svg" alt="cps-company logo" class="logo">
+            </a>
+        </div>
+        
+        <div class="header__contact">
+            <a href="tel:+78008908900" class="header__btn btn">
+                <div class="btn__icon btn__icon--tel"></div>
+            </a>              
             <button class="header__btn btn">
-                <div class="btn__icon btn__icon--menu"></div>
+                <div class="btn__icon btn__icon--message"></div>
             </button>
-            <div class="header__logo">
-                <a href="#">
-                    <img src="./img/logo.svg" alt="cps-company logo" class="logo">
-                </a>
-            </div>
+            <button class="header__btn btn">
+                <div class="btn__icon btn__icon--login"></div>
+            </button>
         </div>
-        <div class="header__btns">
-            <div class="header__contact">
-                <a href="tel:+78008908900" class="header__btn btn">
-                    <div class="btn__icon btn__icon--tel"></div>
-                </a>              
-                <button class="header__btn btn">
-                    <div class="btn__icon btn__icon--message"></div>
-                </button>
-                <button class="header__btn btn">
-                    <div class="btn__icon btn__icon--login"></div>
-                </button>
-            </div>
-            <div class="header__order">
-                <button class="header__btn btn">
-                    <div class="btn__text btn__text--show-on--desktop">Оставить заявку</div>
-                    <div class="btn__icon btn__icon--order"></div>
-                </button>
-            
-                <button class="header__btn btn">
-                    <div class="btn__text btn__text--show-on--desktop">Статус ремонта</div>
-                    <div class="btn__icon btn__icon--status"></div>
-                </button>
-            </div>           
-        </div>
+        <div class="header__order">
+            <button class="header__btn btn">
+                <div class="btn__text">Оставить заявку</div>
+                <div class="btn__icon btn__icon--order"></div>
+            </button>
+        
+            <button class="header__btn btn">
+                <div class="btn__text">Статус ремонта</div>
+                <div class="btn__icon btn__icon--status"></div>
+            </button>
+        </div>           
+       
     </header>
-    <main class="container">
+    <main>
         <article class="content">
-            <h1 class="title-primary title-primary--size--l">Услуги и сервисы</h1>
+            <h1 class="page-title page-title--size--l">Услуги и сервисы</h1>
             <ul class="content__nav page-nav">
                 <li class="page-nav__item">
-                    <a href="#brands" class="page-nav__link page-nav__link--active">Ремонтируемые бренды</a>
+                    <a class="page-nav__link page-nav__link--active" href="#brands" >Ремонтируемые бренды</a>
                 </li>
                 <li class="page-nav__item">
                     <a href="#sub" class="page-nav__link">Дополнительные услуги</a>
@@ -69,10 +68,10 @@
             </ul>
             <section class="content__section">
                 <div class="content__text">
-                    <p class="content__p">
+                    <p class="content__paragraph">
                         Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
                     </p>
-                    <p class="content__p">
+                    <p class="content__paragraph">
                         <span class="content__span">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</span><span class="content__span">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span>
                     </p>
                     <button class="content__read-more btn">
@@ -84,7 +83,7 @@
             </section>
         </article>
     </main>
-    <footer class="container footer">
+    <footer class="footer">
     </footer>
 </body>
 </html>

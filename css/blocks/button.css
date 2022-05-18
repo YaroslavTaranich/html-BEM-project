@@ -37,6 +37,8 @@
     background-color: var(--primary-color);
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    box-sizing: border-box;
+    transition: all .4s;
 }
 
 .btn__icon--menu{
@@ -64,9 +66,31 @@
     margin-right: .5rem;
     background-color: transparent;
 }
+.btn:hover .btn__icon--read-more {
+    animation-name: shake;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+}
 .btn__icon--close{
     background-image: url("../../img/icons/close.svg");
 }
 .btn__icon--search{
     background-image: url("../../img/icons/search.svg");
+}
+.btn__icon--dropdown{
+    background-image: url("../../img/icons/dropdown.svg");
+    background-color: var(--color-white);
+    border: 2px solid var(--primary-color)
+}
+
+/* effect */
+
+.btn__icon--rotate--180 {
+    transform: rotate(180deg);
+}
+
+.btn:hover .btn__icon--rotate--180 {
+    animation-name: shakeRotate;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
 }
