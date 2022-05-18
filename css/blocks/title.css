@@ -18,12 +18,12 @@
     font-size: 1.75rem;
 }
 @media (min-width: 768px) {
-    .page-title::before{
+    .page-title::before {
         margin-right: 1.25rem ;
     }
 }
 @media (min-width: 1440px) {
-    .page-title::before{
+    .page-title::before {
         margin-right: 2rem ;
     }
 }
@@ -43,12 +43,12 @@
     background: linear-gradient(90deg, var(--bg-color) 0%, var(--white-color) 98.61%);
 }
 @media (min-width: 768px) {
-    .section-title{
+    .section-title {
         padding-left: 1.5rem ;
     }
 }
 @media (min-width: 1440px) {
-    .section-title{
+    .section-title {
         padding-left: 2rem ;
     }
 } 

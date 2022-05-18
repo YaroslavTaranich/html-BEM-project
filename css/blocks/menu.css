@@ -1,4 +1,4 @@
-.menu{
+.menu {
     font-family: "TT Lakes", sans-serif;;
     width: 320px;
     height: 100vh;
@@ -19,37 +19,39 @@
     }
 }
 
-.menu__header{
+.menu__header {
     display: flex;
     height: 5.5rem;
     align-items: center;
     margin: 0 1.5rem;
 }
-.menu__logo{
+.menu__logo {
     margin-left: 1rem;
     margin-right: auto;
 }
-.menu__nav{
+.menu__nav {
     margin: 1rem 0 auto;
 }
-.menu__icons{
+.menu__actions {
     display: flex;
-    margin: 0 1rem;
+    margin: 3rem 1rem 0;
 }
-.menu__btn{
+.menu__btn {
     margin: .5rem;
 }
-.menu__mail{
+.menu__mail {
     text-decoration: none;
     font-weight: 500;
     font-size: 1rem;
-    line-height: 2rem;
+    line-height: 1.5rem;
     letter-spacing: -0.6px;
+    margin-top: .5rem;
     margin-left: 1.5rem;
     margin-right: auto;
-    color: var(--text-color-primary)
+    color: var(--text-color-primary);
+    transition: all .5s;
 }
-.menu__tel{
+.menu__tel {
     text-decoration: none;
     font-weight: 700;
     font-size: 1.5rem;
@@ -58,15 +60,16 @@
     margin-left: 1.5rem;
     margin-right: auto;
     margin-top: .75rem;
-    color: var(--text-color-primary)
+    color: var(--text-color-primary);
+    transition: all .5s;
 }
-.menu__languages{
+.menu__languages {
     margin: 2rem 1.5rem;
 }
 .menu__lang,
 .menu__lang:link,
 .menu__lang:visited,
-.menu__lang:active{
+.menu__lang:active {
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.5rem;
@@ -74,8 +77,10 @@
     color: var(--text-color-primary);
     margin-right: .25rem;
 }
+.menu__mail:hover,
+.menu__tel:hover,
 .menu__lang:focus,
-.menu__lang:hover{
+.menu__lang:hover {
     filter: 
         drop-shadow(0 0 10px var(--text-border-color))
         contrast(5)
@@ -83,6 +88,6 @@
 .menu__lang--active,
 .menu__lang--active:link,
 .menu__lang--active:visited,
-.menu__lang--active:active{
+.menu__lang--active:active {
     color: var(--text-color-secondary)
 }

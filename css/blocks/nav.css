@@ -1,5 +1,5 @@
 
-.nav__list{
+.nav__list {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -7,7 +7,7 @@
 .nav__link,
 .nav__link:link,
 .nav__link:visited,
-.nav__link:active{
+.nav__link:active {
     color: var(--text-color-primary);
     display: block;
     text-decoration: none;
@@ -18,22 +18,21 @@
     transition: all .5s ease    ;
 }
 .nav__link:hover,
-.nav__link:focus{
+.nav__link:focus {
     outline: none   ;
     filter:
-    drop-shadow(0 0 5px var(--text-border-color ))  
-    contrast(5)
-    ;
+    drop-shadow(0 0 5px var(--text-border-color))  
+    contrast(5);
 }
 
 .nav__link--active,
 .nav__link--active:link,
 .nav__link--active:visited,
-.nav__link--active:active{
+.nav__link--active:active {
     position: relative;
     color: var(--text-color-secondary);
 }
-.nav__link--active::before{
+.nav__link--active::before {
     content: "";
     width: 4px;
     height: 32px;
