@@ -10,14 +10,14 @@
 <body>
     <aside class="menu">
         <header class="menu__header">
-            <button class="btn">
-                <div class="btn__icon btn__icon--close" title="Закрыть"></div>
+            <button class="button">
+                <div class="button__icon button__icon--close" title="Закрыть"></div>
             </button>
             <div class="menu__logo">
                 <img class="logo" src="./img/logo.svg"  alt="cps-company logo">
             </div>
-            <button class="btn">
-                <div class="btn__icon btn__icon--search" title="Поиск"></div>
+            <button class="button">
+                <div class="button__icon button__icon--search" title="Поиск"></div>
             </button>
         </header>
         <nav class="menu__nav nav">
@@ -48,24 +48,38 @@
                 </li>
             </ul>
         </nav>
-        <div class="menu__actions">
-            <a class="menu__btn btn" href="tel:+78008908900" title="Позвонить">
-                <div class="btn__icon btn__icon--tel"></div>
-            </a>              
-            <button class="menu__btn btn">
-                <div class="btn__icon btn__icon--message" title="Написать"></div>
-            </button>
-            <button class="menu__btn btn">
-                <div class="btn__icon btn__icon--login" title="Войти"></div>
-            </button>
-        </div>
-        <a class="menu__mail" href="mailto:mail@cps.com">mail@cps.com</a>
-        <a class="menu__tel" href="tel:+78008908900">8 800 890 8900</a>
-        <div class="menu__languages">
-            <a class="menu__lang menu__lang--active" href="#" lang="ru">RU</a>
-            <a class="menu__lang" href="#" lang="en">EN</a>
-            <a class="menu__lang" href="#"  lang="de-CH">CH</a>
-        </div>
+        <ul class="menu__actions actions">
+            <li class="actions__item">
+                <a class="button" href="tel:+78008908900" title="Позвонить">
+                    <div class="button__icon button__icon--tel"></div>
+                </a>  
+            </li>
+            <li class="actions__item">
+                <button class="button">
+                    <div class="button__icon button__icon--message" title="Написать"></div>
+                </button>
+            </li>
+            <li class="actions__item"> 
+                <button class="button">
+                    <div class="button__icon button__icon--login" title="Войти"></div>
+                </button>
+            </li>
+        </ul>
+        <address class="menu__address address">
+            <a class="address__mail" href="mailto:mail@cps.com">mail@cps.com</a>
+            <a class="address__tel" href="tel:+78008908900">8 800 890 8900</a>
+        </address>
+        <ul class="menu__lang lang">
+            <li class="lang__item">
+                <a class="lang__link lang__link--active" href="#" lang="ru">RU</a>
+            </li>
+            <li class="lang__item">
+                <a class="lang__link" href="#" lang="en">EN</a>
+            </li>
+            <li class="lang__item">
+                <a class="lang__link" href="#"  lang="de-CH">CH</a>
+            </li>
+        </ul>
     </aside>
 </body>
 </html>

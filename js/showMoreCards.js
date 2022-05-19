@@ -1,14 +1,16 @@
-export default function showMoreCards(cardsContainer, button, togglingModificator) {
-    const container = document.querySelector(cardsContainer);
-    button = document.querySelector(button);
-    const btnText = button.querySelector(".btn__text");
-    const btnIcon = button.querySelector(".btn__icon");
+export default function showMoreCards(cardsSelector, buttonSelector) {
+  const container = document.querySelector(cardsSelector);
+  const button = document.querySelector(buttonSelector);
+  const buttonText = button.querySelector(".show-more__text");
 
-    button.addEventListener('click', () => {
-        container.classList.toggle(togglingModificator);
-        btnIcon.classList.toggle("btn__icon--rotate--180");
-        btnText.innerText = btnIcon.classList.contains("btn__icon--rotate--180") 
-                          ? "Скрыть"
-                          : "Показать все"
-    })
+  button.addEventListener("click", () => {
+    button.classList.toggle("show-more--open");
+    if (button.classList.contains("show-more--open")) {
+      container.style.maxHeight = `${container.scrollHeight}px`;
+      buttonText.innerText = "Скрыть";
+    } else {
+      container.style.maxHeight = ``;
+      buttonText.innerText = "Показать все";
+    }
+  });
 }

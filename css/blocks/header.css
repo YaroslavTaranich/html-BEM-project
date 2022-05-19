@@ -14,21 +14,21 @@
     display: flex;
     align-items: center;
 }
-.header__btn,
+.header__button,
 .header__logo {
     margin: .5rem;
 }
 .header__logo {
     margin-right: auto;
 }
-.header__contact {
+.header__actions {
     display: none;
 }
-.header__order > .btn > .btn__text {
+.header__order .button__text {
     display: none;
 }
 @media (min-width: 900px) {
-    .header__order > .btn > .btn__text {
+    .header__order .button__text {
         display: block;
     }
 }
@@ -50,7 +50,7 @@
         margin: auto .75rem;
         display: block;
     }
-    .header__contact {
+    .header__actions {
         display: flex;
     }
     .header__logo::before {
@@ -64,8 +64,8 @@
 }
 @media (min-width: 1440px) {
     .header__logo,
-    .header > .header__btn,
-    .header__contact,
+    .header > .header__button,
+    .header__actions,
     .header__order:before{
         display: none;
     }

@@ -1,7 +1,7 @@
-.btn,
-.btn:link,
-.btn:visited,
-.btn:active {
+.button,
+.button:link,
+.button:visited,
+.button:active {
     display: flex;
     align-items: center;
     background: transparent;
@@ -10,10 +10,10 @@
     cursor: pointer;
     transition: all .3s;
     }
-.btn:hover{
+.button:hover{
     transform: translateY(-1px);
 }
-.btn__text {
+.button__text {
     display: block;
     font-size: 1rem;
     font-family: 'TT Lakes';
@@ -21,16 +21,8 @@
     letter-spacing: -0.2px;
     padding: 0 0.5rem;
 }
-.btn__text--show-on--desktop{
-    display: none;
-}
-@media (min-width: 900px) {
-    .btn__text--show-on--desktop{ 
-        display:block;
-    }
-}
 
-.btn__icon {
+.button__icon {
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 50%;
@@ -41,43 +33,36 @@
     transition: all .4s;
 }
 
-.btn__icon--menu{
+.button__icon--menu{
     background-image: url("../../img/icons/menu.svg");
 }
-.btn__icon--tel{
+.button__icon--tel{
     background-image: url("../../img/icons/tel.svg");
 }
-.btn__icon--message{
+.button__icon--message{
     background-image: url("../../img/icons/messege.svg");
 }
-.btn__icon--login{
+.button__icon--login{
     background-image: url("../../img/icons/login.svg");
 }
-.btn__icon--order{
+.button__icon--order{
     background-image: url("../../img/icons/tools.svg");
 }
-.btn__icon--status{
+.button__icon--status{
     background-image: url("../../img/icons/status.svg");
 }
-.btn__icon--read-more{
-    background-image: url("../../img/icons/more.svg");
-    width: .5rem;
-    height: 1rem;
-    margin-right: .5rem;
-    background-color: transparent;
-}
-.btn:hover .btn__icon--read-more {
+.button:hover .button__icon--read-more {
     animation-name: shake;
     animation-duration: .5s;
     animation-iteration-count: infinite;
 }
-.btn__icon--close{
+.button__icon--close{
     background-image: url("../../img/icons/close.svg");
 }
-.btn__icon--search{
+.button__icon--search{
     background-image: url("../../img/icons/search.svg");
 }
-.btn__icon--dropdown{
+.button__icon--dropdown{
     background-image: url("../../img/icons/dropdown.svg");
     background-color: var(--color-white);
     border: 2px solid var(--primary-color)
@@ -85,12 +70,4 @@
 
 /* effect */
 
-.btn__icon--rotate--180 {
-    transform: rotate(180deg);
-}
 
-.btn:hover .btn__icon--rotate--180 {
-    animation-name: shakeRotate;
-    animation-duration: .5s;
-    animation-iteration-count: infinite;
-}
