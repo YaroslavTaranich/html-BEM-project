@@ -38,7 +38,7 @@ export default function initMobileSwiper(container) {
 
   window.addEventListener("resize", (e) => {
     const width = e.target.screen.availWidth;
-    if (isInited && width > breakpoint) {
+    if (isInited && width >= breakpoint) {
       mobileSwiper.destroy(true, true);
       isInited = false;
     }
