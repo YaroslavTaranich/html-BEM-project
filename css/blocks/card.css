@@ -1,0 +1,16 @@
+.card {
+    display: flex;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    min-width: 14rem;
+    height: 4.5rem;
+}
+
+.card__img{
+    max-width: 50%;
+}

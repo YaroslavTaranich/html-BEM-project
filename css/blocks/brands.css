@@ -4,7 +4,18 @@
 }
 .brands__swiper {
     padding: 1rem;
-    padding-bottom: 3rem;
+    padding-bottom: 0rem;
+    position: relative;
+}
+.brands__swiper::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 80%;
+    width: 1.5rem;
+    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    z-index: 100;
 }
 .brands__show-more {
     display: none;
@@ -12,6 +23,9 @@
 @media (min-width: 768px) {
     .brands__swiper {
         padding: 1.5rem;
+    }
+    .brands__swiper::after{
+        display: none;
     }
     .brands__show-more {
         display: flex;
@@ -23,7 +37,7 @@
     .brands__swiper {
         padding: 1.5rem 2rem;
     }
-    .brands__read-more {
+    .brands__show-more {
         margin-left: 2rem;
     }
 } 
