@@ -1,6 +1,6 @@
-export default function showMoreCards(cardsSelector, buttonSelector) {
-  const container = document.querySelector(cardsSelector);
-  const button = document.querySelector(buttonSelector);
+export default function showMoreByClick(dataName, openButtonText = "Показать всё") {
+  const container = document.querySelector(`[data-show-more-container='${dataName}']`);
+  const button = document.querySelector(`[data-show-more-button='${dataName}']`);
   const buttonText = button.querySelector(".show-more__text");
 
   button.addEventListener("click", () => {
@@ -10,7 +10,7 @@ export default function showMoreCards(cardsSelector, buttonSelector) {
       buttonText.innerText = "Скрыть";
     } else {
       container.style.maxHeight = ``;
-      buttonText.innerText = "Показать все";
+      buttonText.innerText = openButtonText;
     }
   });
 }

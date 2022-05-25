@@ -1,6 +1,7 @@
 @import url(./normolize.css);
 @import url(./fonts.css);
 @import url(./variables.css);
+@import url(./animations.css);
 @import url(./blocks/container.css);
 @import url(./blocks/actions.css);
 @import url(./blocks/address.css);
@@ -15,5 +16,4 @@
 @import url(./blocks/nav.css);
 @import url(./blocks/brands.css);
 @import url(./blocks/cards.css);
-@import url(./blocks/card.css);
 @import url(./blocks/swiper.css);

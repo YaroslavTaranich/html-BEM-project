@@ -1,10 +1,10 @@
-import Swiper from "https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js";
+import Swiper, { Pagination } from "swiper";
 
 const swiperSettings = {
-  // Optional parameters
+  modules: [Pagination],
   slidesPerView: 1.2,
   speed: 400,
-  spaceBetween: 20,
+  spaceBetween: 16,
   loop: true,
 
   breakpoints: {
@@ -18,21 +18,23 @@ const swiperSettings = {
       slidesPerView: 2.4,
     },
   },
-  // If we need pagination
+
   pagination: {
     el: ".swiper-pagination",
-    clickable: true
+    clickable: true,
+    type: "bullets"
   },
-}
+};
 
-export default function initMobileSwiper(container) {
+export default function initMobileSwiper(dataSwiperName) {
+  const selector = `[data-swiper="${dataSwiperName}"]`;
   const breakpoint = 768;
   const initialWidth = window.screen.availWidth;
   let mobileSwiper;
-  let isInited = false;
 
+  let isInited = false;
   if (initialWidth < breakpoint) {
-    mobileSwiper = new Swiper(container, swiperSettings);
+    mobileSwiper = new Swiper(selector, swiperSettings);
     isInited = true;
   }
 
@@ -43,7 +45,7 @@ export default function initMobileSwiper(container) {
       isInited = false;
     }
     if (!isInited && width < breakpoint) {
-      mobileSwiper = new Swiper(container, swiperSettings);
+      mobileSwiper = new Swiper(selector, swiperSettings);
       isInited = true;
     }
   });

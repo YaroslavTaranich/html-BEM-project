@@ -11,6 +11,22 @@
     height: 4.5rem;
 }
 
-.card__img{
+.card--size--l {
+    height: 10rem;
+}
+
+.card__img {
     max-width: 50%;
+}
+
+.card__title {
+    align-self: flex-start;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: -.2px;
+    color: var(--text-color-primary);
+}
+
+.card--size--l > .card__button {
+    align-self: flex-end;
 }

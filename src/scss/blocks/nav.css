@@ -14,9 +14,18 @@
     font-size: 1rem;
     letter-spacing: -0.2px;
     font-weight: 500;
-    padding: 1rem 1.5rem;
+    padding: 1rem;
     transition: all .5s ease    ;
 }
+@media (min-width: 360px) {
+    .nav__link,
+    .nav__link:link,
+    .nav__link:visited,
+    .nav__link:active {
+        padding-left: 1.5rem;
+    }
+}
+
 .nav__link:hover,
 .nav__link:focus {
     outline: none   ;
