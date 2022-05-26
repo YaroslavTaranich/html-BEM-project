@@ -49,6 +49,7 @@
     "node": "~14.18.3"
   },
   "dependencies": {
+    "normalize.css": "^8.0.1",
     "swiper": "^8.1.5"
   }
 }

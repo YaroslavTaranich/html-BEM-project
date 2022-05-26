@@ -1,6 +1,7 @@
 .slider-section {
     background-color: var(--bg-color);
 }
+
 .slider-section__swiper {
     padding: 1rem;
 }

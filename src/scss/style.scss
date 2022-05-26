@@ -1,6 +1,6 @@
-@import '../../node_modules/swiper/swiper-bundle.min.css';
+@import '/node_modules/swiper/swiper-bundle.min.css';
+@import '~normalize.css';
 
-@import './normolize.css';
 @import './fonts.css';
 @import './variables.css';
 @import './blocks/container.css';
@@ -20,13 +20,9 @@
 @import './blocks/menu.css';
 @import './blocks/nav.css';
 @import './blocks/swiper.css';
-@import './blocks/brands.css';
 @import './blocks/slider-section.css';
 @import './blocks/cards-container.css';
 @import './blocks/card.css';
 @import './blocks/prices.css';
 @import './blocks/table.css';
 @import './blocks/footer.css';
-
-
-// @import '../../node_modules/swiper/swiper.scss';

@@ -4,6 +4,7 @@
     list-style: none;
     display: flex;
 }
+
 .lang__link,
 .lang__link:link,
 .lang__link:visited,
@@ -15,12 +16,14 @@
     color: var(--text-color-primary);
     margin-right: .25rem;
 }
+
 .lang__link:focus,
 .lang__link:hover {
     filter: 
         drop-shadow(0 0 10px var(--text-border-color))
         contrast(5)
 }
+
 .lang__link--active,
 .lang__link--active:link,
 .lang__link--active:visited,

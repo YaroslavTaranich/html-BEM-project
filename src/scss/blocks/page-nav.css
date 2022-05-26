@@ -7,11 +7,13 @@
     padding-bottom: .5rem;
     box-sizing:border-box;
 }
+
 @media (min-width: 768px) {
     .page-nav {
         padding-left: 1.5rem;
     }
 }
+
 @media (min-width: 1120px) {
     .page-nav{
         overflow-x:auto;
@@ -19,6 +21,7 @@
         flex-wrap: wrap;
     }
 }
+
 @media (min-width: 1440px) {
     .page-nav {
         padding-left: 2rem;
@@ -27,6 +30,7 @@
 
 .page-nav__item{
     margin: 0;
+    margin-top: .5rem;
     padding: 0;
     display: block;
 }
@@ -43,6 +47,7 @@
     border-radius: 6px;
     white-space: nowrap;
 }
+
 .page-nav__link:focus{
     outline: none;
     color: var(--text-color-primary);
@@ -53,15 +58,11 @@
 .page-nav__link:hover {
     color: var(--text-color-primary);
 }
+
 .page-nav__link--active:link,
 .page-nav__link--active:visited,
 .page-nav__link--active:active{
     border: 2px solid var(--page-nav-border-color);
     border-radius: 6px;
     background-color: var(--white-color)
-}
-@media (min-width: 1120px) {
-    .page-nav__item:last-child{
-        margin-top: .5rem;
-    }
 }

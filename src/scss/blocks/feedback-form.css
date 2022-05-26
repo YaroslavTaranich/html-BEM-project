@@ -10,21 +10,13 @@
     padding-bottom: 2rem;
 }
 
-.feedback-form__close {
-    margin-left: 1rem;
-    margin-bottom: 2rem;
-}
 @media (min-width: 768px) {
     .feedback-form{
         overflow: visible;
         padding-top: 2rem;
     }
-    .feedback-form__close{
-        position: absolute;
-        left: -5rem;
-        top: 2rem;
-    }
 }
+
 .feedback-form__fieldset {
     border: none;
     margin: 0;
@@ -32,6 +24,7 @@
     width: 100%;
     box-sizing: border-box;
 }
+
 @media (min-width: 768px) {
     .feedback-form__fieldset{
         padding: 1.5rem 2rem 0;
@@ -40,24 +33,29 @@
 .feedback-form__input{
     margin-bottom: 1rem;
 }
+
 .feedback-form__trems {
     margin: 0 1rem;
     font-size: 	0.875rem;
     line-height: 1rem;
     color: var(--text-color-secondary);
 }
+
 @media (min-width: 768px) {
     .feedback-form__trems{
         margin: 0 2rem;
     }
 }
+
 .feedback-form__link {
     text-decoration: none;
     color: var(--primary-color)
 }
+
 .feedback-form__link:hover {
     text-decoration: underline;
 }
+
 .feedback-form__submit {
     margin-left: auto;
     margin-right: 1rem;

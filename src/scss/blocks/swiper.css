@@ -13,9 +13,11 @@
     height: .75rem;
     background-color: #DDD;
 } 
+
 .swiper-pagination-bullet-active {
     background-color: #B5B6BC;
 }
+
 @media (min-width: 768px) {
     .swiper-pagination{
         display: none;

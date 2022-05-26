@@ -22,7 +22,7 @@ const swiperSettings = {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
-    type: "bullets"
+    type: "bullets",
   },
 };
 
@@ -31,22 +31,23 @@ export default function initMobileSwiper(dataSwiperName) {
   const breakpoint = 768;
   const initialWidth = window.screen.availWidth;
   let mobileSwiper;
+  let state = "destroyed";
 
-  let isInited = false;
-  if (initialWidth < breakpoint) {
+  function initSwiper() {
     mobileSwiper = new Swiper(selector, swiperSettings);
-    isInited = true;
+    state = "initiated";
+  }
+  
+  function destroySwiper() {
+    mobileSwiper.destroy(true, true);
+    state = "destroyed";
   }
 
+  if (initialWidth < breakpoint) initSwiper()
+  
   window.addEventListener("resize", (e) => {
     const width = e.target.screen.availWidth;
-    if (isInited && width >= breakpoint) {
-      mobileSwiper.destroy(true, true);
-      isInited = false;
-    }
-    if (!isInited && width < breakpoint) {
-      mobileSwiper = new Swiper(selector, swiperSettings);
-      isInited = true;
-    }
+    if (state === "initiated" && width >= breakpoint) destroySwiper()    
+    if (state === "destroyed" && width < breakpoint) initSwiper()
   });
 }

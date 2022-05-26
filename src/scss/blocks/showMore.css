@@ -24,9 +24,11 @@
     margin: .5rem;
     background-color: transparent;
 }
+
 .show-more--open::before {
     transform: rotate(180deg);
 }
+
 .show-more:hover::before {
     animation-name: shake;
     animation-duration: .5s;

@@ -51,6 +51,19 @@
     transition: transform .4s;
 }
 
+.popup__close {
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+    .popup__close{
+        position: absolute;
+        left: -5rem;
+        top: 2rem;
+    }
+}
+
 /* переопределение для меню на десктопе */
 @media (min-width: 1440px) {
     .popup--visible[data-popup-name="menu"],
