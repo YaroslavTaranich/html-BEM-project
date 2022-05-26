@@ -292,7 +292,7 @@
                             <span class="table__name">Ремонтные услуги</span>
                             <span class="table__price">Цена</span>
                             <span class="table__time">Срок</span>
-                            <span class="table__button"></span>
+                            <span class="table__button">&nbsp;</span>
                         </li>
                         <div class="table__body swiper-wrapper">
                             <li class="table__row swiper-slide">
@@ -342,7 +342,7 @@
                         <p class="text__paragraph">
                             Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.
                         </p>
-                        <button class="button">
+                        <button class="button" data-feedback="open">
                             <span class="button__text">Получить коммерческое предложение <span class="button__icon button__icon--inline button__icon--arrow-right button__icon--not-filled"></span></span>
                             
                         </button>
@@ -367,7 +367,7 @@
 
     <div class="popup popup--left" data-popup-name="feedback">
         <form class="popup__content feedback-form">
-            <button class="feedback-form__close button" data-feedback="close" type="button">
+            <button class="popup__close button" data-feedback="close" type="button">
                 <div class="button__icon button__icon--close"></div>
             </button> 
             <h1 class="page-title page-title--size--xl">Обратная связь</h1>
@@ -387,7 +387,7 @@
     </div>
     <div class="popup popup--left" data-popup-name="callback">
         <form class="popup__content feedback-form">
-            <button class="feedback-form__close button" data-callback="close" type="button">
+            <button class="popup__close button" data-callback="close" type="button">
                 <div class="button__icon button__icon--close"></div>
             </button> 
             <h1 class="page-title page-title--size--xl">Заказать звонок</h1>
