@@ -328,6 +328,11 @@
 
 .button__icon--close{
     background-image: url(./static/close.svg);
+    transition: transform .4s;
+}
+
+.button__icon--close:hover {
+    transform: rotate(180deg);
 }
 
 .button__icon--search{
@@ -358,6 +363,7 @@
     border: none;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .show-more__text {
