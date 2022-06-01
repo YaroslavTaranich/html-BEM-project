@@ -1,7 +1,7 @@
-export default function popup(ModalDataName) {
-  const openButtons = document.querySelectorAll(`[data-${ModalDataName}="open"]`);
-  const popup = document.querySelector(`[data-popup-name="${ModalDataName}"]`);
-  const closeButtons = popup.querySelectorAll(`[data-${ModalDataName}="close"]`);
+export default function popup(modalDataName) {
+  const openButtons = document.querySelectorAll(`[data-${modalDataName}="open"]`);
+  const popup = document.querySelector(`[data-popup-name="${modalDataName}"]`);
+  const closeButtons = popup.querySelectorAll(`[data-${modalDataName}="close"]`);
 
   function openPopup() {
     popup.classList.add(`popup--visible`);

@@ -94,6 +94,11 @@
 
 .button__icon--close{
     background-image: url("../../img/icons/close.svg");
+    transition: transform .4s;
+}
+
+.button__icon--close:hover {
+    transform: rotate(180deg);
 }
 
 .button__icon--search{
