@@ -834,7 +834,7 @@ template {
   left: 0;
   z-index: 75;
   transform: translateX(-100%);
-  transition: visibility 0s .2s, opacity .5s, transform 0s .1s; }
+  transition: visibility 0s .5s, opacity .5s, transform 0s .5s; }
   .popup[data-popup-name="menu"] {
     z-index: 50;
     /* переопределение для меню на десктопе */ }
