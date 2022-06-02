@@ -10,9 +10,9 @@
   z-index: 75;
   transform: translateX(-100%);
   transition:
-    visibility 0s .2s,
+    visibility 0s .5s,
     opacity .5s,
-    transform 0s .1s;
+    transform 0s .5s;
 
   &[data-popup-name="menu"] {
     //  чтобы другие модалки были сверху меню
