@@ -1,0 +1,38 @@
+.page-title {
+    font-family: "TT Lakes", sans-serif;
+    display: flex;
+    align-items:center;
+    margin: 0;
+    letter-spacing: -0.6px;
+
+    &::before {
+        content: "";
+        display: inline-block;
+        width: 4px;
+        height: 40px;
+        margin-right: 0.75rem ;
+        background-color: $text-border-color;
+        border-radius: 0 4px 4px 0;
+
+        @media (min-width: $screen-m) {
+            margin-right: 1.25rem;
+        }
+        @media (min-width: $screen-l) {
+            margin-right: 2rem;
+        }
+    }
+
+    &--size {
+        &--l {
+            font-size: 1.75rem;
+        }
+        &--xl {
+            font-size: 2rem;
+            &::before {
+                @media (min-width: $screen-m) {
+                    margin-right: 1.75rem;
+                }
+            }
+        }
+    }
+}

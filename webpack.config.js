@@ -29,7 +29,10 @@ module.exports = {
           },
         },
       },
-
+      {
+        test: /\.css$/,
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
+      },
       // Компилируем SCSS в CSS
       {
         test: /\.scss$/,

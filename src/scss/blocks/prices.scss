@@ -1,0 +1,32 @@
+.prices {
+    padding-bottom: 3rem;
+
+    @media (min-width: $screen-m) {
+        padding-bottom: 1rem;
+    }
+
+    &__table {
+        margin: 0 .5rem;
+
+        @media (min-width: $screen-m) {
+            margin: 1rem 1.5rem;
+        }
+
+        @media (min-width: $screen-l) {
+            margin: 2rem;
+        }
+    }
+
+    &__text {
+        margin: 0 .5rem;
+
+        @media (min-width: $screen-m) {
+            margin: 1.5rem 0;
+            max-width: 26.5rem;
+        }
+
+        @media (min-width: $screen-l) {
+            margin: 2rem 0;
+        }
+    }
+}

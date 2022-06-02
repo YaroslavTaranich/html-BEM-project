@@ -1,0 +1,95 @@
+.popup {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.96);
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 75;
+  transform: translateX(-100%);
+  transition:
+    visibility 0s .2s,
+    opacity .5s,
+    transform 0s .1s;
+
+  &[data-popup-name="menu"] {
+    //  чтобы другие модалки были сверху меню
+    z-index: 50;
+    /* переопределение для меню на десктопе */
+    @media (min-width: $screen-l) {
+      position: fixed;
+      transform: none;
+      opacity: 1;
+      width: auto;
+      height: auto;
+    }
+  }
+
+  &--position {
+    &--right {
+      left: unset;
+      right: 0;
+      transform: translateX(100%);
+    }
+  }
+
+  &--visible {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    z-index: 100;
+    transition:
+      opacity .5s,
+      transform 0s 0s;
+
+    /* переопределение для меню на десктопе */
+    &[data-popup-name="menu"] {
+      @media (min-width: $screen-l) {
+        position: fixed;
+        transform: none;
+        opacity: 1;
+        width: auto;
+        height: auto;
+      }
+      /* чтобы при ресайзе меню встовало на место, даже если открыто */
+      & > .popup__content {
+        @media (min-width: $screen-l) {
+          transform: translateX(-720px) 
+        }
+      }
+    }
+  }
+
+  &__content {
+    position: fixed;
+    left: 0;
+    top: 0;
+    transform: translateX(-100%);
+    transition: transform .4s;
+  }
+
+  &--position--right &__content {
+    left: unset;
+    right: 0;
+    transform: translateX(100%);
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+  }
+
+  &--visible &__content {
+    transform: translateX(0);
+    transition: transform .4s;
+  }
+
+  &__close {
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+
+    @media (min-width: $screen-m) {
+      position: absolute;
+      left: -5rem;
+      top: 2rem;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.text-input {
+    width: 100%;
+    border-radius: .5rem;
+    background-color: $white-color;
+    border: 1px solid $card-border-color;
+    color: $text-color-primary;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: .75rem 1rem;
+    box-sizing: border-box;
+    transition: all .3s;
+
+    &::placeholder {
+        color: $placeholder-color;
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px $text-border-color;
+    }
+}

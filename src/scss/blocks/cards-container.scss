@@ -2,10 +2,8 @@
     list-style: none;
     margin: 0;
     padding: 0;
-}
 
-@media (min-width: 768px) {
-    .cards-container {
+    @media (min-width: $screen-m) {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         row-gap: 1rem;
@@ -15,15 +13,21 @@
         max-height: 10rem;
         transition: all .5s ease;
     }
-    .cards-container--size--l{
-        max-height: 12rem;
+
+    @media (min-width:1120px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            column-gap: 2rem
+    }
+
+    &--size--l{
+        @media (min-width: $screen-m) {
+            max-height: 12rem;
+        }    
     }     
+
 }
 
-@media (min-width:1120px) {
-    .cards-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        column-gap: 2rem
-      }
-}
+
+
+

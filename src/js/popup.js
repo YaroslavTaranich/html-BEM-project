@@ -1,11 +1,20 @@
 export default function popup(modalDataName) {
-  const openButtons = document.querySelectorAll(`[data-${modalDataName}="open"]`);
+  const openButtons = document.querySelectorAll(
+    `[data-${modalDataName}="open"]`
+  );
   const popup = document.querySelector(`[data-popup-name="${modalDataName}"]`);
-  const closeButtons = popup.querySelectorAll(`[data-${modalDataName}="close"]`);
+  const closeButton = popup.querySelector(`[data-${modalDataName}="close"]`);
+  const input = popup.querySelector(".text-input");
 
-  function openPopup() {
+  function openPopup(event) {
+    event.preventDefault();
     popup.classList.add(`popup--visible`);
     document.body.style.overflow = "hidden";
+    if (input) {
+      setTimeout(() => {
+        input.focus();
+      }, 250);
+    }
   }
 
   function closePopup() {
@@ -14,12 +23,10 @@ export default function popup(modalDataName) {
   }
 
   openButtons.forEach((button) => {
-    button.addEventListener("click", openPopup);
+    button.addEventListener("click", (event) => openPopup(event));
   });
 
-  closeButtons.forEach((button) => {
-    button.addEventListener("click", closePopup);
-  });
+  closeButton.addEventListener("click", closePopup);
 
   popup.addEventListener("click", (e) => {
     if (e.target.classList.contains("popup")) {

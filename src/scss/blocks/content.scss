@@ -1,0 +1,58 @@
+.content{
+    background-color: $bg-color;
+    padding: 1.5rem 0 0;
+
+    @media (min-width: $screen-l) {
+            padding-top: 2.5rem;
+    }
+
+    &__nav {
+        margin: 1.5rem 0 1rem;
+
+        @media (min-width: $screen-m) {
+            margin: 2rem 0 1.5rem;
+        }
+        @media  (min-width: $screen-l) {
+            margin: .5rem 0 1rem;
+        }
+    }
+    &__section{
+        padding-bottom: 1rem;
+
+        @media (min-width: $screen-m) {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 2rem ;
+        }
+
+    }
+
+    &__text{
+        margin: 0 1rem 1rem;
+        box-sizing:border-box;
+        @media  (min-width: $screen-m) {
+            max-width: 40%;
+            margin-left: 1.5rem;
+        }
+        @media  (min-width: $screen-l) {
+            max-width: 44%;
+            margin-left: 2rem;
+        }
+    }
+
+    &__image{
+        width: 100%;
+        align-self: flex-start;
+        @media  (min-width: $screen-m) {
+            width: 46%;
+            margin: 0 1.625rem;
+            border-radius: 6px;
+        }
+        @media  (min-width: $screen-l) {
+            width: 48%;
+            margin: 0 1.625rem;
+            border-radius: 6px;
+        }
+    }
+}
+

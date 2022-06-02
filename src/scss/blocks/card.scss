@@ -1,0 +1,32 @@
+.card {
+    display: flex;
+    background: $white-color;
+    border: 1px solid $card-border-color;
+    border-radius: 6px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    min-width: 14rem;
+    height: 4.5rem;
+
+    &--size--l {
+        height: 10rem;
+    }
+
+    &__img {
+        max-width: 50%;
+    }
+
+    &__title {
+        align-self: flex-start;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        letter-spacing: -.2px;
+        color: $text-color-primary;
+    }
+
+    &--size--l > &__button {
+        align-self: flex-end;
+    }
+}

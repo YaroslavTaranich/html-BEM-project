@@ -4,11 +4,9 @@
     margin: 0 auto;
     position: relative;
     box-sizing: border-box;
+    @media (min-width: $screen-l) {
+            max-width: $screen-l;
+            padding-left: 320px;   
+    }
 }
 
-@media (min-width: 1440px) {
-    .container{
-        max-width: 1440px;
-        padding-left: 320px;   
-    }   
-}

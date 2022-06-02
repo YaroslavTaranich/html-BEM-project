@@ -1,3 +1,4 @@
+import "swiper/swiper-bundle.min.css";
 import "../scss/style.scss";
 
 import popup from "./popup";

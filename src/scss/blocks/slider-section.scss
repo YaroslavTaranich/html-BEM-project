@@ -1,0 +1,36 @@
+.slider-section {
+    background-color: $bg-color;
+
+    @media (min-width: $screen-m) {
+        padding-bottom: 2rem;
+    }
+
+    @media (min-width: $screen-l) {
+        padding-bottom: 3rem;
+    }
+
+    &__swiper {
+        padding: 1rem;
+
+        @media (min-width: $screen-m) {
+            padding: 1.5rem;
+        }
+
+        @media (min-width: $screen-l) {
+            padding: 1.5rem 2rem;
+        }
+    }
+
+    &__show-more {
+        display: none;
+
+        @media (min-width: $screen-m) {
+            display: flex;
+            margin-left: 1.5rem;
+        }
+
+        @media (min-width: $screen-l) {
+            margin-left: 2rem;
+        }
+    }
+}

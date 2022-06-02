@@ -1,0 +1,37 @@
+.lang {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+
+    &__link {
+
+        &,
+        &:link,
+        &:visited,
+        &:active {
+            font-size: 1rem;
+            font-weight: 500;
+            line-height: 1.5rem;
+            text-decoration: none;
+            color: $text-color-primary;
+            margin-right: .25rem;
+
+        }
+
+        &:focus,
+        &:hover {
+            filter:
+                drop-shadow(0 0 10px $text-border-color) contrast(5)
+        }
+
+        &--active {
+            &,
+            &:link,
+            &:visited,
+            &:active {
+                color: $text-color-secondary;
+            }
+        }
+    }
+}
