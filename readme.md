@@ -1,3 +1,3 @@
-## Блок 1.6
+## Вёрстка по макету
 
 https://yaroslavtaranich.github.io/KATA-web-core/
